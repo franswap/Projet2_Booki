@@ -1,7 +1,13 @@
 
-html, 
-body {
+* {
+  margin: 2px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+html {
     font-family: 'Raleway', sans-serif;
+    margin: 10 px;
+    padding: 10px;
 }
 
 main {
@@ -11,6 +17,7 @@ main {
 span {
   font-weight: bold;
 }
+
 
 /* BARRE DE NAVIGATION */
 
@@ -90,6 +97,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 15px;
 }
 
 .recherche {
@@ -174,6 +182,9 @@ nav {
 }
 
 .icon_filtre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: -2px;
   border-radius: 25px;
   width: 52px;
@@ -230,7 +241,6 @@ main {
   flex: 2;
   height: 1200px;
   width: 1000px;
-  margin: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -241,28 +251,27 @@ main {
 }
 
 .titre_hebergement {
-  margin-right: 400px;
+  margin-right: 300px;
+  display:flex;
+  justify-content: flex-start;
 }
 
-.Hébergements .offres {
+.offres {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   background-color: white;
+  padding: 1%;
+  margin: 5%;
   box-shadow: 10px;
   border-radius: 10px;
-  height: 300px;
-  width: 200px;
-  padding: 10px;
-  margin: 15px;
 }
 
 .Hébergements .desc_offres_bloc1 {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin-bottom: 10px;
-    margin-top: -70px;
 }
 
 .Hébergements .desc_offres_bloc2 {
@@ -273,15 +282,11 @@ main {
 }
 
 .image_hebergement {
-  background-size: cover;
-  background-position: center;
-  background-position: center;
-}
-
-.offres .img_offres {
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 120px;
+  width: 100%;
+  height: 100px;
+  background-size: 100% 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
 
 .lien_detail {
@@ -307,6 +312,7 @@ main {
   height: 1200px;
   width: 1000px;
   margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
 }
 
@@ -319,8 +325,8 @@ main {
   margin: 5%;
   box-shadow: 10px;
   border-radius: 10px;
-
 }
+
 icon_pop {
   display: flex;
   justify-content: space-between;
@@ -329,21 +335,29 @@ icon_pop {
 }
 
 .img_populaires {
+  width: 100%;
+  height: 100%;
+  max-height: 110px;
+  min-width: 170px;
+  border-radius: 20px 0 0 15px;
   object-fit: cover;
-  width: 35%;
-  height: 160px;
-  border-radius: 15px 0 0 15px;
 }
 
+desc_populaire {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 Partie activités
 
 #Activités {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
   border-radius: 5%;
-  width: 100%;
-  align-self: flex-end;
+  width: 10%;
 }
 
 .desc_Activités {
@@ -358,21 +372,20 @@ Partie activités
   justify-content: space-between;
   flex-direction: column;
   background-color: white;
-  box-shadow: 10px;
   width: 40%;
   border-radius: 10px;
   box-shadow: 0 0 20px #0000002e;
   text-align: center;
 }
 
-.activités_bloc1 .activités_bloc3{
+.activités_bloc1, .activités_bloc3{
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
-.activités_bloc2 .activités_bloc4{
+.activités_bloc2, .activités_bloc4{
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
 
@@ -383,13 +396,14 @@ Partie activités
   transform: scale(1.03);
 }
 
-
 .img_Activités {
-    background-size: 100% 100%;
+    background-size: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 0px 0px 22px 0px;
+    object-fit: cover;
 }
+
 
 .Activités h2 {
     margin-bottom: 27px;
