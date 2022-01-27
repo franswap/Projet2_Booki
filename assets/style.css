@@ -467,12 +467,12 @@ main {
 }
 
 .img_low {
-  width: 400px;
+  width: 100%;
   height: 400px;
 }
 
 .img_large {
-  width: 400px;
+  width: 100%;
   height: 700px;
 }
 
