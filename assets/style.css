@@ -249,7 +249,7 @@ main {
 .bloc_hebergement {
   flex: 2;
   height: 1200px;
-  width: 1000px;
+  width: 1300px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -257,12 +257,11 @@ main {
   flex-wrap: wrap;
   align-items: center;
   background-color: #f2f2f2;
+  margin-right: auto;
 }
 
 .titre_hebergement {
-  margin-right: 300px;
-  display:flex;
-  justify-content: flex-start;
+  margin-right: auto;
 }
 
 .offres {
@@ -271,10 +270,12 @@ main {
   align-items: center;
   flex-direction: column;
   background-color: white;
-  padding: 1%;
-  margin: 5%;
+  margin: 15px;
+  padding: 10px;
   box-shadow: 10px 10px 10px 10px #F2F2F2;
   border-radius: 10px;
+  width: 400px;
+  height: 350px;
 }
 
 .Hébergements .desc_offres_bloc1 {
@@ -427,6 +428,8 @@ Partie activités
     display: flex;
     justify-content: center;
     align-content: center;
+    margin: 0%;
+    padding: 0%;
 }
 
 .footer_blocs {
