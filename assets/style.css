@@ -145,6 +145,7 @@ nav {
 .flitrer {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 40px;
 }
@@ -402,10 +403,11 @@ main {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: auto;
+  margin-right: auto;
 }
 
 .notations {
-  margin-left: auto;
+  margin-right: auto;
   display: flex;
 }
 
