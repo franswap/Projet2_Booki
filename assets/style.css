@@ -6,7 +6,7 @@
 }
 html {
     font-family: 'Raleway', sans-serif;
-    margin: 10 px;
+    margin: 10px;
     padding: 10px;
 }
 
@@ -38,7 +38,7 @@ span {
 
 .line_du_haut {
   width: 140px;
-  height: 5;
+  height: 5px;
 }
 .decoration:hover {
     cursor: pointer;
@@ -117,7 +117,7 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: #F2F2F2;
-  border-radius: 10 0px 0px 10;
+  border-radius: 10px 0 0 10px;
  }
 
  .buttons_recherche {
@@ -264,7 +264,7 @@ main {
   background-color: white;
   padding: 1%;
   margin: 5%;
-  box-shadow: 10px;
+  box-shadow: 10px 10px 10px 10px #F2F2F2;
   border-radius: 10px;
 }
 
@@ -323,7 +323,7 @@ main {
   background-color: white;
   padding: 1%;
   margin: 5%;
-  box-shadow: 10px;
+  box-shadow: 10px 10px 10px 10px #F2F2F2;
   border-radius: 10px;
 }
 
