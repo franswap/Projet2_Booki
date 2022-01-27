@@ -350,48 +350,84 @@ main {
   text-align: center;
 }
 
+.haut_populaire {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
 .populaires {
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
+  flex-direction: row;
   background-color: white;
   padding: 1%;
   margin: 5%;
+  height: 25%;
+  width: 90%;
   box-shadow: 10px 10px 10px 10px #F2F2F2;
   border-radius: 10px;
 }
 
-icon_pop {
+.populaires:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 15px #0065FC;
+}
+
+.orga_pop {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
+  flex-direction: column;
+}
+
+.icon_pop {
+  margin-right: 10px;
+  font-size: 50px;
 }
 
 .img_populaires {
-  width: 100%;
-  height: 100%;
-  max-height: 110px;
-  min-width: 170px;
+  width: 40%;
+  height: 250px;
   border-radius: 20px 0 0 15px;
   object-fit: cover;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
 }
 
-desc_populaire {
-  margin-left: 10px;
+.desc_populaire {
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: auto;
 }
-Partie activités
+
+.notations {
+  margin-left: auto;
+  display: flex;
+}
+
+/* Partie activités */
 
 #Activités {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
-  border-radius: 5%;
-  width: 10%;
+  flex-wrap: wrap;
+  height: 1200px;
+  width: 1860px;
+  flex-wrap: wrap;
+  margin-right: auto;
+  background-color: red;
+}
+
+#Activités h2 {
+  margin-right: auto;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 .desc_Activités {
@@ -399,16 +435,17 @@ Partie activités
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .Activités {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
-  background-color: white;
-  width: 40%;
+  margin: 30px;
+  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 20px #0000002e;
+  background-color: blue;
   text-align: center;
 }
 
@@ -417,12 +454,26 @@ Partie activités
   flex-direction: column;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
+  width: 400px;
+  height: 1100px;
 }
 
 .activités_bloc2, .activités_bloc4{
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
+  width: 400px;
+  height: 480px;
 
+}
+
+.img_low {
+  width: 400px;
+  height: 400px;
+}
+
+.img_large {
+  width: 400px;
+  height: 700px;
 }
 
 .Activités:hover {
