@@ -542,6 +542,24 @@ main {
   }
 
   @media screen and (max-width: 992px) {
+  
+    html, body {
+      flex-basis: 100%;
+      flex-flow: column nowrap; 
+      margin: auto;
+      padding: auto;
+    }
+
+    #Activités, .bloc_hebergement {
+      width: 992px;
+      flex-flow: wrap;
+    }
+
+    .bloc_hebergement {
+      flex-basis: 100%;
+      flex-flow: row wrap; 
+    }
+  
     #hebergements {
       flex-direction: row;
     }
@@ -562,7 +580,7 @@ main {
     }
 
     .logo {
-      font-size: 75px;
+      font-size: 50px;
     }
 
     .active {
@@ -585,7 +603,12 @@ main {
 
   .part_populaires {
     order:1;
-    flex-flow: row nowrap; 
+    flex-flow: column nowrap; 
+    flex-basis: 100%;
+  }
+
+  .img_populaires {
+    flex-flow: column nowrap; 
     flex-basis: 100%;
   }
 
