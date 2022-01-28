@@ -141,7 +141,7 @@ nav {
 
 /* FILTRES POUR LA RECHERCHE */
 
-.flitrer {
+.filtrer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -442,8 +442,8 @@ main {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  margin: 30px;
-  padding: 30px;
+  margin: none;
+  padding: none;
   border-radius: 10px;
   border: 2px solid #F2F2F2;
   text-align: center;
@@ -588,11 +588,19 @@ main {
       border-bottom: 1px solid blue;
     }
 
-  .liste_filtre, .filtrer {
+    .filtrer {
+      display: block;
+      width: 100%;
+    }
+
+  .liste_filtre {
     align-items: stretch;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
   }
+
 
   .title {
     margin-bottom: auto;
@@ -604,6 +612,13 @@ main {
   .part_populaires {
     order:1;
     flex-flow: column nowrap; 
+    width: 100%;
+    height: 1200px;
+    margin-left: auto;
+
+  }
+
+  .populaires {
     flex-basis: 100%;
   }
 
@@ -615,18 +630,26 @@ main {
   .bloc_hebergement {
     order:2;
     flex-flow: column nowrap; 
-    flex-basis: 50%;
+    width: 100%;
     align-items: center;
     background-color: white;
   }
 
   #Hébergements {
     flex-flow: column nowrap;  
-    flex-basis: 50%;
+    flex-basis: 100%;
   }
-
+ 
+  .offres {
+    width: 100%;
+    margin-left: auto;
+  }
+  .img_offres {
+    width: 100%;
+  }
   .desc_offres_bloc1, .desc_offres_bloc2 {
     flex-flow: column nowrap; 
+    width: 100%;
   }
   
   .foot_bloc {
@@ -634,16 +657,43 @@ main {
   }
 
   .desc_Activités {
-    flex-basis: 100%;
+    width: 100%;
     flex-flow: column nowrap; 
   }
 
   .activités_bloc1, .activités_bloc3,
   .activités_bloc2, .activités_bloc4 {
     flex: none;
+    width: 100%;
   }
+
+  #Activités {
+    width: 100%;
+    height: 100%;
+  }
+
   .Acitivités {
     flex-basis: 150px;
     height: 100%;
+    width: 100%;
   }
+  .img_low .img_large {
+    width: 100%;
+    height: 200px;
+  }
+  .img_Activités {
+    width: 600px;
+    height: 200px;
+  }
+
+  .activités_bloc2, .activités_bloc4{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .footer_blocs {
+    flex-direction: column;
+  }
+
   }
