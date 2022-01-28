@@ -8,7 +8,6 @@ html {
     font-family: 'Raleway', sans-serif;
     margin: 10px;
     padding: 10px;
-    max-width: 1920px;
     width: 100%;
 }
 
@@ -540,4 +539,88 @@ main {
   
   .footer-bloc-assistance {
     margin-right: 20%;
+  }
+
+  @media screen and (max-width: 992px) {
+    #hebergements {
+      flex-direction: row;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+
+    html, body {
+      flex-basis: 100%;
+      flex-flow: column nowrap; 
+      margin: auto;
+      padding: auto;
+    }
+
+    .nav_toggle {
+      flex-direction: column;
+    }
+
+    .logo {
+      font-size: 75px;
+    }
+
+    .active {
+      border-top: none;
+      border-bottom: 1px solid blue;
+    }
+
+  .liste_filtre, .filtrer {
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .title {
+    margin-bottom: auto;
+    padding: 15px;
+  }
+
+  /* Le main version mobile */
+
+  .part_populaires {
+    order:1;
+    flex-flow: row nowrap; 
+    flex-basis: 100%;
+  }
+
+  .bloc_hebergement {
+    order:2;
+    flex-flow: column nowrap; 
+    flex-basis: 50%;
+    align-items: center;
+    background-color: white;
+  }
+
+  #Hébergements {
+    flex-flow: column nowrap;  
+    flex-basis: 50%;
+  }
+
+  .desc_offres_bloc1, .desc_offres_bloc2 {
+    flex-flow: column nowrap; 
+  }
+  
+  .foot_bloc {
+    flex-direction: column;
+  }
+
+  .desc_Activités {
+    flex-basis: 100%;
+    flex-flow: column nowrap; 
+  }
+
+  .activités_bloc1, .activités_bloc3,
+  .activités_bloc2, .activités_bloc4 {
+    flex: none;
+  }
+  .Acitivités {
+    flex-basis: 150px;
+    height: 100%;
+  }
   }
