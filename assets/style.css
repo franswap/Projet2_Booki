@@ -1,13 +1,8 @@
-
-* {
-  margin: 2px;
-  padding: 2px;
-  box-sizing: border-box;
-}
 html {
     font-family: 'Raleway', sans-serif;
     margin: 10px;
     padding: 10px;
+    max-width: 1440px;
     width: 100%;
 }
 
@@ -171,14 +166,6 @@ nav {
   margin-right: 20px;
 }
 
-.texte_filtre_icon:hover > .text_filtre {
-  color: #0065FC
-}
-
-.texte_filtre_icon:hover > .icon_filtre {
-  color: white;
-  background-color: #0065FC;
-}
 
 .text_filtre {
   height: 50px;
@@ -230,33 +217,20 @@ nav {
 /* Main du site */
 
 main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1920px;
-  width: 100%;
+  display: block;
   }
 
 /* HEBERGEMENTS MARSEILLE */
 
 .Hébergements {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
 }
 
 .bloc_hebergement {
   flex: 2;
-  height: 1200px;
-  width: 1300px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
+  border-radius: 15px;
   background-color: #f2f2f2;
   margin-right: auto;
 }
@@ -264,26 +238,34 @@ main {
 .titre_hebergement {
   margin-right: auto;
   margin-left: 15px;
+  padding: 20px;
+}
+
+.offre_ref {
+  width: 30%;
+  height: 230px;
+  margin: 0 auto 0px;
 }
 
 .offres {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  height: 350px;
   background-color: white;
   margin: 15px;
   padding: 10px;
-  box-shadow: 10px 10px 10px 10px #F2F2F2;
   border-radius: 10px;
-  width: 400px;
-  height: 400px;
+}
+
+.decoration_link {
+    color: black;
+    text-decoration: none;
 }
 
 .offres:hover {
     cursor: pointer;
-    box-shadow: 0px 5px 15px #0065FC;
-}
+    opacity: 0.8;
+  }
 
 .Hébergements .desc_offres_bloc1 {
     display: flex;
@@ -295,22 +277,19 @@ main {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin-top: 10px;
 }
 
 .img_offres {
-  width: 380px;
-  height: 200px;
-  background-size: 100% 100%;
+  background-size: cover;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
-  margin:0%;
-  padding: 0%;
+  height: 50%;
+  width: 100%;
 }
 
 .text_offre {
   margin-right: auto;
-  padding-bottom: 60px;
+  font-size: 15px;
 }
 
 .full_star {
@@ -320,35 +299,29 @@ main {
 .empty_star {
   color: #F2F2F2
 }
-.lien_detail {
+
+.lien_detail h2 {
   font-weight: bold;
-  margin-right: auto;
-  margin-left: 15px;
+  margin-top: auto;
+  margin-left: 30px;
+  padding-top: 20px;
 }
 
-.lien_detail:hover {
-  cursor: pointer;
-  color: #0065FC;
-}
 
 .notations {
   margin-right: auto;
+  margin-top: 50px;
 }
 
 /* PARTIE SUR LES PLUS POPULAIRES  */
 
 .part_populaires {
   flex: 1;
-  flex-direction: column;
-  justify-content: center;
   box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.2);
   background-color: #F2F2F2;
   border-radius: 10px;
-  height: 1200px;
-  width: 1000px;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
+  margin-left: 40px;
+  text-align: left;
 }
 
 .haut_populaire {
@@ -359,22 +332,26 @@ main {
   margin-left: 15px;
 }
 
+.les_plus_populaires {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .populaires {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  justify-content: center;
   background-color: white;
   padding: 1%;
   margin: 5%;
-  height: 25%;
-  width: 90%;
+  height: 200px;
+  width: 80%;
   box-shadow: 10px 10px 10px 10px #F2F2F2;
   border-radius: 10px;
 }
 
 .populaires:hover {
     cursor: pointer;
-    box-shadow: 0px 5px 15px #0065FC;
+    opacity: 0.8;
 }
 
 .orga_pop {
@@ -389,7 +366,7 @@ main {
 
 .img_populaires {
   width: 40%;
-  height: 250px;
+  height: 200px;
   border-radius: 20px 0 0 15px;
   object-fit: cover;
   display: flex;
@@ -402,28 +379,16 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: auto;
-  margin-right: auto;
+  margin: 15px;
+  font-size: 15px;
 }
 
 .notations {
-  margin-right: auto;
-  display: flex;
+  margin: 15px;
 }
 
 /* Partie activités */
 
-#Activités {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 1200px;
-  width: 1860px;
-  flex-wrap: wrap;
-  margin-right: auto;
-}
 
 #Activités h2 {
   margin-right: auto;
@@ -432,15 +397,16 @@ main {
 }
 
 .desc_Activités {
-  display: flex;
-  flex-direction: center;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+    padding-top: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    justify-content: space-between;
 }
 
 .Activités {
-  display: flex;
+  display: inline-flex;
   justify-content: space-around;
   flex-direction: column;
   margin: none;
@@ -455,8 +421,6 @@ main {
 
 .activités_bloc1, .activités_bloc3{
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 40%;
   height: 100%;
 }
