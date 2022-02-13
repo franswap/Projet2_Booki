@@ -255,6 +255,10 @@ main {
   margin: 15px;
   padding: 10px;
   border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
 .decoration_link {
@@ -554,9 +558,26 @@ main {
   
     html, body {
       flex-basis: 100%;
-      flex-flow: column nowrap; 
+      flex-flow: column; 
       margin: auto;
       padding: auto;
+    }
+
+    .filtrer {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    header {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .liste_filtre {
+      margin-left: 10px;
+    }
+    .barre_recherche {
+      width: 100%;
     }
 
     #Activités, .bloc_hebergement {
@@ -577,9 +598,11 @@ main {
     order:1;
     flex-flow: column nowrap; 
     width: 100%;
-    height: 1200px;
-    margin-left: auto;
+    margin: auto;
+  }
 
+  .les_plus_populaires {
+    width: 100%;
   }
 
   .populaires {
@@ -597,28 +620,32 @@ main {
     width: 100%;
     align-items: center;
     background-color: white;
+    margin: auto;
   }
 
   #Hébergements {
     flex-flow: column nowrap;  
     flex-basis: 100%;
+    margin: 15px;
   }
  
   .offres {
     width: 100%;
-    margin-left: auto;
+    margin: 15px;
   }
   .img_offres {
     width: 100%;
+    height: 200px;
   }
   .desc_offres_bloc1, .desc_offres_bloc2 {
-    flex-flow: column nowrap; 
+    flex-flow: column wrap; 
     width: 100%;
   }
 
   .desc_Activités {
     width: 100%;
-    flex-flow: column nowrap; 
+    flex-flow: column; 
+    margin: auto;
   }
 
   .activités_bloc1, .activités_bloc3,
@@ -627,16 +654,12 @@ main {
     width: 100%;
   }
 
-  #Activités {
+  .contenu_activités {
     width: 100%;
     height: 100%;
     margin: none;
   }
 
-  .Acitivités {
-    height: 100%;
-    width: 100%;
-  }
   .img_low .img_large {
     width: 100%;
     height: 200px;
@@ -652,14 +675,14 @@ main {
     height: 100%;
   }
 
+
   }
 
 
   @media screen and (max-width: 768px) {
 
-    html, body {
-      flex-basis: 100%;
-      flex-flow: column nowrap; 
+    html, body, header {
+      width: 100%;
       margin: auto;
       padding: auto;
     }
@@ -670,11 +693,20 @@ main {
 
     .logo {
       font-size: 50px;
+      text-align: center;
     }
 
     .active {
       border-top: none;
       border-bottom: 1px solid blue;
+    }
+
+    .filtre_tel {
+      width: 36%;
+    }
+
+    .texte_filtre_icon {
+      margin: 10px;
     }
 
     .decoration:hover {
@@ -704,6 +736,26 @@ main {
 
   /* Le main version mobile */
 
+.les_plus_populaires {
+  width: 100%;
+}
+
+.populaires {
+  width: 90%;
+}
+
+.part_populaires {
+  margin-bottom: 15px;
+}
+
+.img_populaires {
+  height: 230px;
+}
+
+.titre_hebergement {
+  font-size: 20px;
+  margin-left: -15px;
+}
 
   .footer_blocs {
     flex-direction: column;
