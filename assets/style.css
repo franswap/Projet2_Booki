@@ -301,11 +301,22 @@ main {
   color: #F2F2F2
 }
 
+.lien_detail {
+  text-decoration: none;
+  color: initial;
+}
+
 .lien_detail h2 {
-  font-weight: bold;
   margin-top: auto;
-  margin-left: 30px;
+  margin-left: 20px;
+  margin-bottom: auto;
   padding-top: 20px;
+  font-size: 15px;
+}
+
+.lien_detail:hover {
+  opacity: 0.8;
+  color:#0065FC;
 }
 
 
