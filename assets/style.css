@@ -2,7 +2,6 @@ html {
     font-family: 'Raleway', sans-serif;
     margin: 10px;
     padding: 10px;
-    max-width: 1440px;
     width: 100%;
 }
 
@@ -496,12 +495,12 @@ main {
 
 .activités_bloc2 .contenu_activités_frioul {
   height: 35%;
-  margin-top: 17%;
+  margin-top: 12%;
 }
 
 .activités_bloc4 .contenu_activités_longchamp {
   height: 45%;
-  margin-top: 17%;
+  margin-top: 12%;
 }
 
 .activités_bloc4 .contenu_activités_notredame {
