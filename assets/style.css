@@ -568,7 +568,7 @@ main {
       padding: 0%;
     }
 
-    header {
+    header .section {
       margin-right: 10px;
       margin-left: 10px;
     }
@@ -576,6 +576,7 @@ main {
     .liste_filtre {
       margin-left: 10px;
     }
+
     .barre_recherche {
       width: 100%;
     }
@@ -693,8 +694,6 @@ main {
 
     html, body, header {
       width: 100%;
-      margin: auto;
-      padding: auto;
     }
 
     .nav_toggle {
@@ -718,6 +717,11 @@ main {
     .texte_filtre_icon {
       margin: 10px;
     }
+
+    .barre_recherche {
+      margin-right: 10px;
+    }
+
 
     .decoration:hover {
       cursor: pointer;
