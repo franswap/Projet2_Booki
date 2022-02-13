@@ -413,13 +413,13 @@ main {
   width: 100%;
 }
 
-#Activités h1 {
+#Activités h2 {
   margin-left: 15px;
   margin-top: 25px;
   font-size: 25px;
 }
 
-#Activités h2 {
+#Activités h3 {
   margin-left: 15px;
   margin-top: -10px;
   font-size: 15px;
@@ -436,7 +436,6 @@ main {
 
 .contenu_activités {
   margin-bottom: 15px;
-  padding: none;
   border-radius: 10px;
   border: 2px solid #F2F2F2;
   border-radius: 15px;
@@ -481,7 +480,6 @@ main {
 .activités_bloc1, .activités_bloc2, .activités_bloc3, .activités_bloc4 {
   margin-right: 35px;
   width: 50%;
-  margin-top: none;
 }
 
 .activités_bloc1 .contenu_activités {
@@ -560,7 +558,6 @@ main {
       flex-basis: 100%;
       flex-flow: column; 
       margin: auto;
-      padding: auto;
     }
 
     .filtrer {
@@ -659,7 +656,6 @@ main {
   .contenu_activités {
     width: 100%;
     height: 100%;
-    margin: none;
   }
 
   .activités_bloc2 .contenu_activités_frioul {
