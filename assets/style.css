@@ -313,7 +313,7 @@ main {
 .lien_detail h2 {
   margin-top: auto;
   margin-left: 25px;
-  margin-bottom: auto;
+  margin-bottom: 15px;
   padding-top: 20px;
   font-size: 22px;
 }
@@ -554,10 +554,10 @@ main {
 
   @media screen and (max-width: 992px) {
   
-    html, body {
+    html, body, main {
       flex-basis: 100%;
       flex-flow: column; 
-      margin: auto;
+      margin-right: 30px;
     }
 
     .filtrer {
@@ -586,6 +586,7 @@ main {
     .bloc_hebergement {
       flex-basis: 100%;
       flex-flow: row wrap; 
+      margin-top: 10px;
     }
   
     #hebergements {
