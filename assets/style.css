@@ -281,6 +281,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  margin-top: 3%;
 }
 
 .img_offres {
@@ -311,10 +312,10 @@ main {
 
 .lien_detail h2 {
   margin-top: auto;
-  margin-left: 20px;
+  margin-left: 25px;
   margin-bottom: auto;
   padding-top: 20px;
-  font-size: 15px;
+  font-size: 22px;
 }
 
 .lien_detail:hover {
@@ -617,7 +618,8 @@ main {
     width: 100%;
     align-items: center;
     background-color: white;
-    margin: auto;
+    margin-left: 20px;
+    margin-right: 35px;
   }
 
   #Hébergements {
@@ -628,8 +630,8 @@ main {
  
   .offres {
     width: 100%;
-    margin: 15px;
   }
+
   .img_offres {
     width: 100%;
     height: 200px;
@@ -643,7 +645,7 @@ main {
     width: 100%;
     height: 100%;
     flex-flow: column; 
-    margin: auto;
+    margin-left: 20px;
   }
 
   .activités_bloc1, .activités_bloc3,
