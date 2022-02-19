@@ -3,6 +3,7 @@ html {
     margin: 10px;
     padding: 10px;
     width: 100%;
+    max-width: 1440px;
 }
 
 main {
@@ -249,7 +250,6 @@ main {
 .offres {
   height: fit-content;
   width: 100%;
-  height: 350px;
   background-color: white;
   margin: 15px;
   padding: 10px;
@@ -284,11 +284,18 @@ main {
   margin-top: 3%;
 }
 
+.bloc_hebergement > .img_case_hebergements {
+  width: 250px;
+  height: 100px;
+  background-size: 100% 100%;
+  border-radius: 20px 20px 0 0;
+}
+
 .img_offres {
   background-size: cover;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
-  height: 50%;
+  height: 175px;
   width: 100%;
 }
 
@@ -310,12 +317,9 @@ main {
   color: initial;
 }
 
-.lien_detail h2 {
-  margin-top: auto;
-  margin-left: 25px;
-  margin-bottom: 15px;
-  padding-top: 20px;
-  font-size: 22px;
+.lien_detail h3 {
+  margin: 3%;
+  font-size: 20px;
 }
 
 .lien_detail:hover {
@@ -326,7 +330,6 @@ main {
 
 .notations {
   margin-right: auto;
-  margin-top: 50px;
 }
 
 /* PARTIE SUR LES PLUS POPULAIRES  */
@@ -344,9 +347,8 @@ main {
 .haut_populaire {
   display: flex;
   justify-content: space-between;
-  margin-right: auto;
+  margin-left: 10%;
   margin-top: 30px;
-  margin-left: 15px;
 }
 
 .les_plus_populaires {
@@ -360,11 +362,15 @@ main {
   justify-content: center;
   background-color: white;
   padding: 1%;
-  margin: 10%;
+  margin: 4%;
   height: 30%;
   width: 80%;
   box-shadow: 10px 10px 10px 10px #F2F2F2;
   border-radius: 10px;
+}
+
+.populaires h3 {
+  font-size: 20px;
 }
 
 .populaires:hover {
@@ -379,33 +385,52 @@ main {
 }
 
 .icon_pop {
-  margin-right: 10px;
-  font-size: 50px;
+  padding: 4%;
+  margin-right: 30px;
+  font-size: 30px;
 }
 
-.img_populaires {
-  width: 40%;
-  height: 200px;
+.icon_pop:hover {
+  color:#0065FC;
+}
+
+.populaire_case_img {
+  width: 50%;
+  height: 180px;
+  max-width: 250px;
   border-radius: 20px 0 0 15px;
   object-fit: cover;
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
+}
+
+.populaire_case_img img {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  min-width: 180px;
+  border-radius: 20px 0 0 15px;
+  object-fit: cover;
 }
 
 .desc_populaire {
   margin-left: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: 5px;
   font-size: 15px;
+}
+
+.populaires .desc_populaire p {
+  margin-top: 10px;
+}
+
+.populaires .desc_populaire h3 {
+  margin: 10px 0 5px 0;
 }
 
 .notations_pop {
   margin-left: 15px;
-  margin-top: 25px;
+  margin-top: 40px;
 }
+
 
 /* Partie activités */
 
@@ -428,6 +453,7 @@ main {
 .desc_Activités {
     padding-top: 10px;
     padding-bottom: 20px;
+    margin-bottom: 2%;
     display: flex;
     flex-direction: row;
     height: 600px;
