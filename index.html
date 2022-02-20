@@ -30,14 +30,20 @@
     <!-- CORPS DE NOTRE CODE -->
 <body>
 
-    <!-- BARRE DE NAVIGATION -->
+    <!-- LOGO DU SITE -->
         <nav class="nav_toggle">
             <div class="logo">
                 <img src="images/logo/Booki.png" alt="Logo de Booki" class="logo_size">
             </div>
+
+    <!-- BARRE DE NAVIGATION -->
             <div class="menu">
-                <div class="lien_du_haut"><a class="color_menu1 decoration active nav_style" href="#Hébergements">Hébergements</a></div>
-                <div class="lien_du_haut"><a class="color_menu2 decoration nav_style" href="#Activités">Activités</a></div>
+                <div class="lien_du_haut taille_mobile">
+                    <a class="color_menu1 decoration active nav_style" href="#Hébergements">
+                        Hébergements</a></div>
+                <div class="lien_du_haut taille_mobile">
+                    <a class="color_menu2 decoration nav_style" href="#Activités">
+                        Activités</a></div>
             </div>
         </nav>
 
@@ -57,22 +63,33 @@
                 <i class="fas fa-map-marker-alt"></i>
             </div>
                 <input type="text" value="Marseille, France" class="recherche">
-                    <div class="buttons_recherche" id="button-research">Rechercher</div>
+                <div class="buttons_recherche" id="button-research">
+                    <span class="recherche_mobile"><i class="fas fa-search"></i></span>
+                <span class="icone_recherche_mobile">
+                Rechercher</span></div>
+                
         </div>
 
 <!-- LES FILTRES DE LA RECHERCHE -->
 
         <div class="filtrer">
             <div class="title"><h3>Filtres</h3></div>
-                <div class="liste_filtre">
+
+<!-- Compartiment 1 pour mobile -->
+            <div class="liste_filtre">
+                <div class="filtre_ligne_mobile">
                     <div class="texte_filtre_icon">
-                        <div class="icon_filtre"><i class="fas fa-money-bill-wave"></i></div>
+                        <div class="icon_filtre filtre_tel"><i class="fas fa-money-bill-wave"></i></div>
                         <div class="text_filtre"> Économique </div> 
                     </div>
-                    <div class="texte_filtre_icon filtre_tel">
+                    <div class="texte_filtre_icon filtre_border_mobile">
                         <div class="icon_filtre"><i class="fas fa-child"></i></div>
                         <div class="text_filtre"> Familial </div>
                     </div>
+                </div>
+
+<!-- Compartiment 2 pour mobile -->
+            <div class="filtre_colonne_mobile">
                     <div class="texte_filtre_icon">
                         <div class="icon_filtre"><i class="fas fa-heart"></i></div>
                         <div class="text_filtre"> Romantique </div>
@@ -82,13 +99,14 @@
                         <div class="text_filtre"> Animaux autorisés </div>
                     </div>
                 </div>
+            </div>
         </div>
 
         <div class="intro_info">
             <div class="icon_border">
                 <i class="fas fa-info fa-xs icon_info"></i>
             </div>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <p>Plus de 500 logements sont disponibles dans cette ville </p>
         </div>
         </section>
     </header>
@@ -222,10 +240,9 @@
             <div class="haut_populaire"><h2>Les plus populaires</h2>
             <i class="fas fa-chart-line icon_pop"></i>
             </div>
-            <div class="les_plus_populaires">
                 <div class="populaires">
-                <a class="decoration_link" href="#">
-                    <div class="populaire_case_img" id="img_pop">
+                <a class="decoration_link_pop" href="#">
+                    <div class="populaire_case_img" id="img_pop1">
                     <img class="img_populaires" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo hotel Le soleil du matin">
                     </div>
                     <div class="orga_pop">
@@ -240,12 +257,12 @@
                     <div class="fas fa-star full_star"></div>
                     <div class="fas fa-star full_star"></div>
                 </div>
+            </div>
             </a>
                 </div>
-            </div>
                 <div class="populaires">
-                    <a class="decoration_link" href="#">
-                        <div class="populaire_case_img" id="img_pop">
+                    <a class="decoration_link_pop" href="#">
+                        <div class="populaire_case_img" id="img_pop2">
                         <img class="img_populaires" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo Au coeur de l'eau - Chambres d'hotes">
                     </div>
                     <div class="orga_pop">
@@ -260,12 +277,12 @@
                     <div class="fas fa-star full_star"></div>
                     <div class="fas fa-star empty_star"></div>
                 </div>
+            </div>
             </a>
                 </div>
-            </div>
                 <div class="populaires">
-                    <a class="decoration_link" href="#">
-                        <div class="populaire_case_img" id="img_pop">
+                    <a class="decoration_link_pop" href="#">
+                        <div class="populaire_case_img" id="img_pop3">
                         <img class="img_populaires" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo hotel Tout bleu et blanc">
                     </div>
                     <div class="orga_pop">
@@ -280,9 +297,8 @@
                     <div class="fas fa-star full_star"></div>
                     <div class="fas fa-star empty_star"></div>
                 </div>
-            </a>
-                </div>
             </div>
+            </a>
                 </div>
             </div>
         </section>    
@@ -294,34 +310,46 @@
             <div class="desc_Activités">
                 <div class="activités_bloc1">
                     <div class="contenu_activités">
+                        <a class="decoration_link" href="#">
                             <img class="img_Activités img_large" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du vieux port">
                             <h3>Vieux Port</h3>
+                            </a>
                     </div>
                 </div>
                 <div class="activités_bloc2">
                     <div class="contenu_activités contenu_activités_pomegues">
+                        <a class="decoration_link" href="#">
                         <img class="img_Activités img_low_pomegues" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                         <h3>Fort de Pomègues</h3>
+                        </a>
                     </div>
                     <div class="contenu_activités contenu_activités_frioul">
+                        <a class="decoration_link" href="#">
                         <img class="img_Activités img_low" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo Iles de Frioul">
                         <h3>Iles de Frioul</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="activités_bloc3">
                     <div class="contenu_activités">
+                        <a class="decoration_link" href="#">
                         <img class="img_Activités img_large" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo Parc national des Calanques">
                         <h3>Parc national des Calanques</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="activités_bloc4">
                     <div class="contenu_activités contenu_activités_notredame">
+                        <a class="decoration_link" href="#">
                         <img class="img_Activités img_low" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo Notre-Dame-de-la-Garde">
                         <h3>Notre-Dame-de-la-Garde</h3>
+                        </a>
                     </div>
                     <div class="contenu_activités contenu_activités_longchamp">
+                        <a class="decoration_link" href="#">
                         <img class="img_Activités img_low" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo Parc Longchamp">
                         <h3>Parc Longchamp</h3>
+                        </a>
                     </div>
                 </div>
             </div>
