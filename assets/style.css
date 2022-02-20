@@ -717,8 +717,6 @@ main {
     width: 100%;
     align-items: center;
     background-color: white;
-    margin-left: 20px;
-    margin-right: 35px;
   }
 
   #Hébergements {
@@ -729,6 +727,7 @@ main {
  
   .offres {
     width: 95%;
+    margin-left: 0%;
   }
 
   .img_offres {
