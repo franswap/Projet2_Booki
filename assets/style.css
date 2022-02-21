@@ -661,9 +661,13 @@ main {
     }
 
     .bloc_hebergement {
-      flex-basis: 100%;
       flex-flow: row wrap; 
       margin-top: 10px;
+      order:2;
+      flex-flow: column nowrap; 
+      width: 85%;
+      align-items: center;
+      background-color: white;
     }
   
     #hebergements {
@@ -711,14 +715,6 @@ main {
 
 }
 
-  .bloc_hebergement {
-    order:2;
-    flex-flow: column nowrap; 
-    width: 100%;
-    align-items: center;
-    background-color: white;
-  }
-
   #Hébergements {
     flex-flow: column nowrap;  
     flex-basis: 100%;
@@ -727,7 +723,7 @@ main {
  
   .offres {
     width: 95%;
-    margin-left: 0%;
+    margin-left: 15px;
   }
 
   .img_offres {
@@ -812,7 +808,7 @@ main {
 
     .decoration {
       margin: 25px 15px 25px 0;
-      width: 100%;
+      width: 85%;
       border-bottom: 5px solid #f2f2f2;
     }
 
@@ -963,8 +959,12 @@ main {
 }
 
 .notations_pop {
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 5px;
+}
+
+.lien_detail h3 {
+  margin-left: 5px;
 }
 
 .icon_pop {
@@ -972,7 +972,7 @@ main {
 }
 
 .populaire_case_img {
-  width: 50%;
+  width: 40%;
   height: 100%;
   border-radius: 20px 0 0 15px;
   object-fit: cover;
@@ -998,16 +998,41 @@ main {
 
 .bloc_hebergement {
   margin: 0;
+  width: 100%;
 }
 
 .desc_Activités {
-  margin: 5px 5px 5px 10px;
+  width: 95%;
+  margin-left: 10px;
 }
+
+.img_offres {
+  height: 130px;
+}
+
 .titre_hebergement {
   font-size: 20px;
   margin-left: -15px;
 }
 
+
+.img_low .img_large {
+  width: 100%;
+  height: 130px;
+}
+
+.img_Activités {
+  width: 100%;
+  height: 130px;
+}
+
+#Activités {
+  width: 100%;
+}
+
+.contenu_activités {
+  width: 95%;
+}
   .footer_blocs {
     flex-direction: column;
   }
