@@ -616,7 +616,6 @@ main {
   
   .foot_link:hover {
     cursor: pointer;
-    text-decoration-line: underline;
     color: #0065FC;
   }
   
