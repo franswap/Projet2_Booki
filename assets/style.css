@@ -1,13 +1,13 @@
-html {
-    font-family: 'Raleway', sans-serif;
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
-    max-width: 1440px;
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 10px 10px 10px;
+  padding: 0 10px 10px 10px;
+  margin: auto;
+  max-width: 1440px;
 }
 
 main {
-  max-width: 100%;
+  margin: auto;
 }
 
 span {
@@ -20,12 +20,12 @@ span {
 .decoration {
     text-decoration: none;
     color: initial;
-    margin: 25px;
-    padding: 15px;
+    margin: 0 25px 25px 25px;
+    padding: 15px 15px 15px 15px;
 }
 
 .active {
-  border-top: 1px solid blue
+  border-top: 2px solid blue;
 }
 
 .color_menu1 {
@@ -290,7 +290,7 @@ main {
   border-radius: 10px;
   border-radius: 10px;
   border: 2px solid #F2F2F2;
-  border-radius: 15px;
+  border-radius: 20px 20px 0 0;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
@@ -405,7 +405,7 @@ main {
   height: 30%;
   width: 85%;
   box-shadow: 10px 10px 10px 10px #F2F2F2;
-  border-radius: 10px;
+  border-radius: 20px 0 0 15px;
 }
 
 .populaires h3 {
@@ -594,7 +594,7 @@ main {
 
 .footer_blocs {
     display: flex;
-    justify-content: space-between;
+    gap: 20%;
     width: 100%;
     max-width: 1500px
 }
@@ -627,10 +627,8 @@ main {
 
   @media screen and (max-width: 992px) {
   
-    html, body, main {
-      flex-basis: 80%;
-      flex-flow: column; 
-      margin-right: 30px;
+    body, main {
+      margin-right: auto;
       max-width: 992px;
     }
 
@@ -654,17 +652,17 @@ main {
     }
 
     #Activités, .bloc_hebergement {
-      width: 93%;
+      width: 90%;
       flex-flow: wrap;
-      margin-left: 3px;
+      margin: auto;
     }
 
     .bloc_hebergement {
       flex-flow: row wrap; 
-      margin-top: 10px;
+      margin: 10px auto;
       order:2;
       flex-flow: column nowrap; 
-      width: 85%;
+      width: 100%;
       align-items: center;
       background-color: white;
     }
@@ -707,8 +705,8 @@ main {
   }
   
 .populaire_case_img {
-  width: 400px;
   height: 180px;
+  max-width: 200px;
   border-radius: 20px 0 0 15px;
   object-fit: cover;
 
@@ -782,11 +780,6 @@ main {
 
 
   @media screen and (max-width: 768px) {
-
-    html, body, header, main {
-      margin: 0;
-      padding: 0;
-    }
 
     .logo {
       width: 100%;
@@ -882,9 +875,7 @@ main {
     }
 
     .barre_recherche {
-      margin-right: 10px;
-      justify-content: center;
-      margin-top: 25px;
+      margin: 20px 0 5px 15px;
     }
 
     .recherche {
@@ -971,7 +962,6 @@ main {
 }
 
 .populaire_case_img {
-  width: 45%;
   height: 100%;
   border-radius: 20px 0 0 15px;
   object-fit: cover;
