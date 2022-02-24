@@ -25,7 +25,7 @@ span {
 }
 
 .active {
-  border-top: 2px solid blue;
+  border-top: 3px solid #0065FC;
 }
 
 .color_menu1 {
@@ -38,7 +38,7 @@ span {
 }
 .decoration:hover {
     cursor: pointer;
-    border-top: 1px solid blue;
+    border-top: 3px solid #0065FC;
     color: #0065FC;
 }
 
