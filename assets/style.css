@@ -625,30 +625,17 @@ main {
 
   /* PARTIE RESPONSIVE DU SITE  */
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1380px) {
   
     body, main {
       margin-right: auto;
       max-width: 992px;
     }
 
-    .filtrer {
-      margin: 0%;
-      padding: 0%;
-      flex-direction: column;
-    }
-
-    header .section {
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-
-    .liste_filtre {
-      margin-left: 10px;
-    }
-
-    .barre_recherche {
-      width: 100%;
+    #Hébergements {
+      flex-flow: column nowrap;  
+      flex-basis: 100%;
+      margin: 15px;
     }
 
     #Activités, .bloc_hebergement {
@@ -712,11 +699,38 @@ main {
 
 }
 
-  #Hébergements {
-    flex-flow: column nowrap;  
-    flex-basis: 100%;
-    margin: 15px;
-  }
+  @media screen and (max-width: 992px) {
+  
+    body, main {
+      margin-right: auto;
+      max-width: 992px;
+    }
+
+    .filtrer {
+      margin: 0%;
+      padding: 0%;
+      flex-direction: column;
+    }
+
+    header .section {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .liste_filtre {
+      margin-left: 10px;
+    }
+
+    .barre_recherche {
+      width: 100%;
+    }
+
+
+    #Activités {
+      width: 90%;
+      flex-flow: wrap;
+      margin: auto;
+    }
  
   .offres {
     width: 95%;
