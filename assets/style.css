@@ -699,6 +699,26 @@ main {
 
 }
 
+.desc_Activités {
+  height: 400px;
+}
+
+.img_large {
+  height: 85%;
+}
+
+.img_low {
+  height: 65%;
+}
+
+.activités_bloc2 .contenu_activités_frioul {
+  margin-top: 37px;
+}
+
+.activités_bloc4 .contenu_activités_longchamp {
+  margin-top: 37px;
+}
+
   }
 
   @media screen and (max-width: 992px) {
@@ -816,7 +836,7 @@ main {
 
     .decoration {
       margin: 25px 15px 25px 0;
-      width: 85%;
+      width: 90%;
       border-bottom: 5px solid #f2f2f2;
     }
 
