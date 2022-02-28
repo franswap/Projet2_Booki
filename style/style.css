@@ -38,6 +38,7 @@ span {
 }
 .decoration:hover {
     cursor: pointer;
+    transition: 1000ms;
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
@@ -49,6 +50,7 @@ span {
 
   .nav_toggle .logo:hover {
     cursor: pointer;
+    transition: 1000ms;
     transform: scale(1.03);
     opacity: 0.8;
     }
@@ -93,14 +95,17 @@ nav {
 
   .texte_filtre_icon:hover > .text_filtre {
     color: #0065fc;
+    transition: 1000ms;
   }
   .texte_filtre_icon:hover > .icon_filtre {
     color: #DEEBFF;
+    transition: 1000ms;
     background-color: #0065fc;
   }
 
   .texte_filtre_icon:hover {
   cursor: pointer;
+  transition: 1000ms;
   transform: scale(1.03);
   opacity: 0.8;
   }
@@ -301,6 +306,7 @@ main {
 
 .offres:hover {
     cursor: pointer;
+    transition: 1000ms;
     transform: scale(1.03);
     opacity: 0.8;
   }
@@ -358,6 +364,7 @@ main {
 
 .lien_detail:hover {
   opacity: 0.8;
+  transition: 1000ms;
   color:#0065FC;
 }
 
@@ -414,6 +421,7 @@ main {
 
 .populaires:hover {
     cursor: pointer;
+    transition: 1000ms;
     transform: scale(1.03);
     opacity: 0.8;
 }
@@ -524,6 +532,7 @@ main {
 
 .contenu_activités:hover {
   cursor: pointer;
+  transition: 1000ms;
   transform: scale(1.03);
   opacity: 0.8;
 }
@@ -616,6 +625,7 @@ main {
   
   .foot_link:hover {
     cursor: pointer;
+    transition: 1000ms;
     color: #0065FC;
   }
   
@@ -935,6 +945,7 @@ main {
     
     .decoration:hover {
       cursor: pointer;
+      transition: 1000ms;
       border-top: none;
       border-bottom: 5px solid #0065FC;
       color: #0065FC;
