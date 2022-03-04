@@ -868,6 +868,7 @@ main {
     .active {
       border-top: none;
       border-bottom: 5px solid #0065FC;
+      position: relative;
     }
 
     header h1 {
