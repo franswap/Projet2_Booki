@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0 10px 10px 10px;
@@ -132,7 +136,7 @@ nav {
 }
 
 .icon_location {
-  height: 50px;
+  height: 54px;
   width: 50px;
   display: flex;
   flex-direction: row;
@@ -148,7 +152,7 @@ nav {
 
  .buttons_recherche {
   color: white;
-  height: 50px;
+  height: 54px;
   width: 120px;
   cursor: pointer;
   display: flex;
@@ -295,7 +299,7 @@ main {
   border-radius: 10px;
   border-radius: 10px;
   border: 2px solid #F2F2F2;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
@@ -380,7 +384,6 @@ main {
   flex-direction: column;
   align-items: center;
   flex: 1;
-  box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.2);
   background-color: #F2F2F2;
   border-radius: 10px;
   margin-left: 40px;
@@ -412,7 +415,7 @@ main {
   height: 30%;
   width: 85%;
   box-shadow: 10px 10px 10px 10px #F2F2F2;
-  border-radius: 20px 0 0 15px;
+  border-radius: 20px;
 }
 
 .populaires h3 {
@@ -929,7 +932,6 @@ main {
       width: 200px;
       border: 1px solid #F2F2F2;
       width: auto;
-      border: none;
     }
 
     .buttons_recherche {
@@ -938,6 +940,8 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-left: -15px;
+      height: 55px;
      }
 
     .icone_recherche_mobile {
@@ -972,6 +976,10 @@ main {
   .title {
     margin-bottom: auto;
     padding: 15px;
+  }
+
+  .icon_location {
+    height: 55px;
   }
 
   .intro_info {
